@@ -1,0 +1,37 @@
+import styled from 'styled-components';
+
+export const Container = styled.div`
+  max-width: 980px;
+  width: 100%;
+  margin: 20px auto;
+
+  h1 { color: #1567E2; width: 68%; margin: 0 auto; font-size: 1.5em; }
+
+  form {
+    width: 780px;
+    margin: 50px auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+
+    label { color: #6c6c80; }
+
+    a { text-decoration: none; }
+
+    button {
+      max-width: 300px;
+      width: 100%;
+      height: 45px;
+      display: block;
+      cursor: pointer;
+      border: 0;
+      border-radius: 50px;
+      margin: 0 auto;
+      background: #1567E2;
+      color: #FFF;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  }
+`;
