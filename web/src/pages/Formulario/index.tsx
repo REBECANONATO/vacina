@@ -32,11 +32,7 @@ const Formulario: React.FC = () => {
 
   const handleSubmit = useCallback(async (data: FormProps) => {
     const response = await api.post('/instituicao', data);
-
-    // console.log(response.data.id);
-
-    history.push(`/deficiencias?id_instituicao=${response.data.id}`);
-
+    history.push(`/deficiencias/${response.data.id}`);
 
   }, []);
 
